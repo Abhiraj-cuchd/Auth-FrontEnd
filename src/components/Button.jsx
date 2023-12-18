@@ -19,7 +19,7 @@ const Button = ({ auth, user }) => {
         </ButtonDiv>
       ) : (
         <ButtonDiv onClick={google}>
-          <p>{auth || "Create an account"}</p>
+          <p style={{ color: "#fff"}}>{auth || "Create an account"}</p>
         </ButtonDiv>
       )}
     </Container>

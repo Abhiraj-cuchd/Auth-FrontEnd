@@ -19,7 +19,6 @@ import HeaderData from "../utils/HeaderData";
 
 // eslint-disable-next-line react/prop-types
 const Header = ({ user }) => {
-
   return (
     <StyledHeader>
       <UpperNav>
@@ -61,7 +60,11 @@ const Header = ({ user }) => {
                 }}
               >
                 <div>
-                  <item.icon />
+                  <item.icon
+                    style={{
+                      color: "#ff7d14",
+                    }}
+                  />
                 </div>
                 <span>{item.title}</span>
               </div>
@@ -86,7 +89,9 @@ const Header = ({ user }) => {
             {user ? <p>Hi, {user.displayName}</p> : <p>Login</p>}
           </div>
           <Line>
-            <p>______________________</p>
+            <p style={{ color: "#f94327" }}>
+              <span style={{ height: "2px" }}>_______________________</span>
+            </p>
           </Line>
         </Profile>
       </MidNav>

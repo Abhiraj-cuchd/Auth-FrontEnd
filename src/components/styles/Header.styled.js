@@ -109,6 +109,7 @@ export const Profile = styled.div`
 
 export const Line = styled.div`
     width: inherit
+    background-color: #f94327;
     height: 10px;
 `
 
